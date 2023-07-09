@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+    </label>
+
+
+    <a href="#" class="enlace">
+        <img src="./img/logo.svg" alt="">
+    </a>
+
+
+    <ul>
+        <li class="active"><a href="#">INICIO</a></li>
+        <li class="MENU"><a href="./menu bbq/menu.html">MENU</a></li>
+        <li class="NEWS"><a href="./novedades/news.html">NOVEDADES</a></li>
+    </ul>
+
+</nav>
+
+ 
+<div class="slider">
+    <div class="slide"><a href=""><img src="./img/banner/a.jpg" alt=""></a></a></div>
+    <div class="slide"><a href=""><img src="./img/banner/b.jpg" alt=""></a></div>
+    <div class="slide"><a href=""><img src="./img/banner/c.jpg" alt=""></a></div>
+    <div class="slide"><a href=""><img src="./img/banner/d.jpg" alt=""></a></div>
+  </div>
+
+  <div class="dots">
+    <button class="prev"><i class="fa-solid fa-arrow-right fa-rotate-180"></i></button>
+    <span class="dot active" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
+    <span class="dot" data-index="3"></span>
+    <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+  
+
+  <section id="coupons">
+    <h1>Cupones</h1>
+
+    <li class="active"><img src="./img/coupons/b.jpg" alt=""></li>
+    <li ><img class="2" src="./img/coupons/C.jpg" alt=""></li>
+    <li class="3"><img src="./img/coupons/D.jpg" alt=""></li>
+  </section>
+
+  <section id="news">
+    <h1>News</h1>
+
+    <li>  
+        <div class="card">
+            <img class="card-image" src="./img/news/a.jpg" alt="Descripción de la imagen">
+            <h2 class="card-title">2x1 GASEOSA</h2>
+            <p class="card-description">¿Qué tal un 2x1 pa´ matar la sed? ¡Disfruta el doble! 2x1 en gaseosa grande y mediana todo el día, todos los días.</p>
+
+          </div>
+    </li>
+
+    <li>
+        <div class="card">
+            <img class="card-image" src="./img/news/c.jpg" alt="Descripción de la imagen">
+            <h2 class="card-title">BECAME THE SOCCER KING</h2>
+            <p class="card-description">Conviértete en un Rey del Dutbol y gana premios exclusivos de la UEFA CHAMPIONS LEAGUE.</p>
+          </div>
+    </li>
+
+
+  </section>
+
+
+  <footer>
+    <h1>TM y © 2021 Burger King Corporation. Todos los derechos reservados. KINCO S.A.S NIT. 900103877-1 / BKCOL S.A.S NIT. 901095278-6 / BKAL S.A.S NIT. 901095468-9 -</h1>
+    </footer>
+
+  
+    <script src="./carrusel.js"></script>
+      <script src="./menu.js"></script>
+</body>
+</html>

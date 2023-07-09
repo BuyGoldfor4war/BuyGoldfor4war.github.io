@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Main';
+    src: url(./fonts/Acumin-Variable-Concept.ttf);
+}
+
+@font-face {
+    font-family: 'Avigea';
+    src: url(./fonts/Avigea.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000;
+}
+
+nav {
+    background-color: #000;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    margin-right: 400px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Main';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav ul li.Active a{
+    text-decoration: underline;
+}
+
+
+
+a.enlace {
+    display: flex;
+    padding: 10px;
+    font-family: 'Avigea';
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    margin-left: 400px;
+}
+
+
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1500px){
+
+    a.enlace {
+        display: flex;
+        padding: 10px;
+        color: #fff;
+        margin: 0 auto;
+    }
+
+    .checkbtn {
+        display: block;
+        position: absolute;
+        left: 40px;
+        font-size: 40px;
+        color: #fff;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        top: 80px;
+        left: -100%;
+        z-index: 999;
+    }
+
+    nav ul li {
+        display: flex ;
+        text-align: left;
+    } 
+
+    nav ul li a{
+        color: #fff;
+    } 
+
+    ul li.active {
+      border-radius: 0;
+    }
+
+    li {
+        margin-top: 20px;
+    }
+
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+
+/*Banner*/
+
+@media (max-width: 700px){
+    .banner img{
+        width: 400px;
+    }
+
+    .banner {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 400px){
+    .banner img{
+        width: 250px;
+    }
+}
+
+/*Desc*/
+
+
+.Desc p{
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Main';
+    margin-top: 20px;
+}
+
+@media (max-width: 700px){
+    .Desc p{
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 400px){
+    .Desc p{
+        max-width: 350px;
+    }
+}
+
+/*Proyectos*/
+
+.Proyectos {
+    display: flex;
+}
+
+.Proyectos img{
+    margin-top: 20px;
+    width: 900px;
+}
+
+.Dos img{
+    margin-top: 20px;
+    width: 900px;
+}
+
+.Tres img{
+    margin-top: 20px;
+    width: 900px;
+}
+
+.Cuatro img {
+    margin-top: 20px;
+    width: 900px;
+}
+
+@media (max-width: 700px){
+    
+    .Proyectos img{
+        margin-top: 20px;
+        width: 400px;
+    }
+    
+    .Dos img{
+        margin-top: 20px;
+        width: 400px;
+    }
+    
+    .Tres img{
+        margin-top: 20px;
+        width: 400px;
+    }
+    
+    .Cuatro img {
+        margin-top: 20px;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 400px){
+    .Proyectos img{
+        margin-top: 20px;
+        width: 250px;
+    }
+    
+    .Dos img{
+        margin-top: 20px;
+        width: 250px;
+    }
+    
+    .Tres img{
+        margin-top: 20px;
+        width: 250px;
+    }
+    
+    .Cuatro img {
+        margin-top: 20px;
+        width: 250px;
+    }
+}
+
+.Enlaces img{   
+    width: 40px;
+    margin-right: 20px;
+}
+
+footer h1 {
+    color: #fff;
+    font-family: 'Main';
+}

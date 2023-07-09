@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </label>
+        
+        
+            <a href="../hamburger.html" class="enlace">
+                <img src="../img/logo.svg" alt="">
+            </a>
+        
+        
+            <ul>
+                <li class="INICIO"><a href="../hamburger.html">INICIO</a></li>
+                <li class="NEWS"><a href="../menu bbq/menu.html">MENU</a></li>
+                <li class="active"><a href="./news.html">NOVEDADES</a></li>
+            </ul>
+    
+        </nav>
+        </div>
+
+        <section id="news">
+            <h1>News</h1>
+        
+            <li>  
+                <div class="card">
+                    <a href="#" onclick="mostrarPopup()"><img class="card-image" src="./newsImg/1.jpg" alt="Descripción de la imagen"></a>
+                    <h2 class="card-title">NUEVA BBQ BURGER</h2>
+                    <p class="card-description">El irresistible sabor ahumado de nuestra salsa BBQ en una hamburguesa, cuenta con 1 carne de 48 gr. queso americano, aros de cebolla y salsa BBQ, en combo con papas medianas y gaseosa mediana por $14.400 .Aplica en puntos de venta a nivel nacional.</p>
+        
+                  </div>
+            </li>
+            
+            <li>
+                <div class="card">
+                    <a href="#" onclick="mostrarPopup2()"><img class="card-image" src="./newsImg/3.jpg" alt="Descripción de la imagen"></a>
+                    <h2 class="card-title">2x1 GASEOSA</h2>
+                    <p class="card-description">¿Qué tal un 2×1 pa´ matar la sed? ¡Disfruta el doble! 2×1 en gaseosa grande y mediana todo el día, todos los días. Promoción de 2×1 en gaseosa aplica para tamaño mediano y grande, solo para comedor y ventas por dispensador, no aplica para domicilios ni presentaciones PET, no aplica para Refill (rellenar la bebida más de …</p>
+                  </div>
+            </li>
+            
+            <li>
+                <div class="card">
+                    <a href="#"  onclick="mostrarPopup3()"><img class="card-image" src="./newsImg/2.jpg" alt="Descripción de la imagen"></a>
+                    <h2 class="card-title">¡Nos declaramos Flexitarianos!</h2>
+                    <p class="card-description">Burger King se viste de verde</p>
+                  </div>
+            </li>
+
+
+            <div>
+
+            <li>
+                <div class="card">
+                    <a href="#" onclick="mostrarPopup4()"><img class="card-image" src="./newsImg/4.jpeg" alt="Descripción de la imagen"></a>
+                    <h2 class="card-title">Esperamos tu llamada</h2>
+                    <p class="card-description">Esperamos tu llamada</p>
+                  </div>
+            </li>
+            </div>
+          </section>
+
+          <div id="miPopup" class="popup">
+            <div class="popup-contenido">
+                <h1>NUEVA BBQ BURGER</h1>
+                <img src="./Nimg/1.jpg" alt="">
+                <div class="Desc">
+                <p>El irresistible sabor ahumado de nuestra salsa BBQ en una hamburguesa, cuenta con 1 carne de 48 gr. queso americano, aros de cebolla y salsa BBQ, en combo con papas medianas y gaseosa mediana por $14.400 .Aplica en puntos de venta a nivel nacional.</p>
+            </div>
+              <button class="Boton" onclick="cerrarPopup()">Volver</button>
+            </div>
+          </div>
+
+          <div id="miPopup2" class="popup">
+            <div class="popup-contenido">
+                <h1>2x1 GASEOSA</h1>
+                <img src="./Nimg/2.jpg" alt="">
+                <div class="Desc">
+                <p>¿Qué tal un 2x1 pa´ matar la sed? ¡Disfruta el doble! 2x1 en gaseosa grande y mediana todo el día, todos los días.
+    
+                    Promoción de 2x1 en gaseosa aplica para tamaño mediano y grande, solo para comedor y ventas por dispensador, no aplica para domicilios ni presentaciones PET, no aplica para Refill (rellenar la bebida más de una vez). Aplica para compra de gaseosa por separado, no aplica en combo</p>
+            </div>
+              <button class="Boton" onclick="cerrarPopup2()">Volver</button>
+            </div>
+          </div>
+
+          <div id="miPopup3" class="popup">
+            <div class="popup-contenido">
+                <h1>¡Nos declaramos Flexitarianos!</h1>
+                <img src="./Nimg/3.jpg" alt="">
+                <div class="Desc">
+                <p>Burger King se viste de verde</p>
+            </div>
+              <button class="Boton" onclick="cerrarPopup3()">Volver</button>
+            </div>
+          </div>
+
+          <div id="miPopup4" class="popup">
+            <div class="popup-contenido">
+                <h1>Esperamos tu llamada</h1>
+                <img src="./Nimg/4.jpeg" alt="">
+                <div class="Desc">
+                <p>Pide tu hamburguesa favorita a través de nuestros domicilios, por medio de nuestras lineas telefónicas, linea celular, Autoking o por nuestra página web o app</p>
+            </div>
+              <button class="Boton" onclick="cerrarPopup4()">Volver</button>
+            </div>
+          </div>
+
+          <footer>
+            <h1>TM y © 2021 Burger King Corporation. Todos los derechos reservados. KINCO S.A.S NIT. 900103877-1 / BKCOL S.A.S NIT. 901095278-6 / BKAL S.A.S NIT. 901095468-9 -</h1>
+            </footer>
+
+          <script src="./pop-up1.js"></script>
+          <script src="./pop-up2.js"></script>
+          <script src="./pop-up3.js"></script>
+          <script src="./pop-up4.js"></script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+@font-face {
+    font-family: 'Flame';
+    src: url(../fonts/FlameBold.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Flame';
+}
+
+body {
+    background: #ffd787;
+}
+
+nav {
+    background-color: #ffd787;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Flame';
+    font-size: 20px;
+}
+
+nav ul li.INICIO a:hover {
+  background-color: #ffe2a7;
+  padding: 10px;
+  border-radius: 15px;
+  color: #d62300;
+}
+
+nav ul li.NEWS a:hover {
+    background-color: #ffe2a7;
+    padding: 10px;
+    border-radius: 15px;
+    color: #d62300;
+  }
+
+ul li.active {
+  background-color: #d62300;
+  border-radius: 15px;
+}
+
+ul li.active a {
+  color: white;
+}
+
+.subMenu {
+    width: 100%;
+    position: relative;
+    background-color: #ffd787;
+}
+
+@media (max-width: 1208px) {
+    .subMenu {
+        white-space: nowrap;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+@media (max-width: 720px) {
+    .subMenu {
+        white-space: nowrap;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        padding: 20px;
+    }
+}
+
+.subMenu li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.subMenu a{
+    color: #d62300;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+.subMenu.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffd787; /* ajusta el color de fondo según tus necesidades */
+    z-index: 99; /* asegúrate de que el submenú se superponga a otros elementos si es necesario */
+    height: 40px;
+}
+
+.enlace {
+    display: flex;
+    padding: 10px;
+}
+
+.enlace img {
+    width: 30px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 720px){
+
+    .checkbtn {
+        display: block;
+        position: absolute;
+        left: 40px;
+        font-size: 40px;
+        color: #d62300;
+        z-index: 999;
+        border-radius: 20px;
+        border-radius: 0;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffd787;
+        top: 80px;
+        left: -100%;
+        z-index: 9999;
+    }
+
+    ul li.active {
+        border-radius: 0;
+    }
+
+    ul li {
+        border-radius: 0;
+    }
+
+    nav ul li {
+        display: flex ;
+        text-align: left;
+    } 
+
+    nav ul li a{
+        color: #d62300;
+    } 
+
+    li {
+        margin-top: 20px;
+    }
+
+    .enlace img{
+        width: 40px;
+    }
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+
+/*menu Whopper*/
+
+#Whopper{
+    margin: 20px;
+}
+
+
+.titleWhopper h1 {
+    font-size: 40px;
+}
+
+
+.imgWhopper li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.imgWhopper li a h1{
+    margin-top: 20px;
+}
+
+.imgWhopper img {
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.imgWhopper img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+/*Megastacker*/
+
+#Megastacker {
+    margin-top: 40px;
+}
+
+.titleMegastacker {
+    margin-top: 20px;
+}
+
+.titleMegastacker h1 {
+    font-size: 40px;
+
+}
+
+
+.imgMegastacker li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.imgMegastacker img {
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.imgMegastacker img:hover{
+    transform: scale(1.1);
+}
+
+/*the Kings*/
+
+#Kings {
+    margin-top: 40px;
+}
+
+.titleKings {
+    margin-top: 20px;
+}
+
+.titleKings h1 {
+    font-size: 40px;
+
+}
+
+.imgKings li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.imgKings img {
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.imgKings img:hover{
+    transform: scale(1.1);
+}
+
+/*Normal*/
+
+#Hamburguesas {
+    margin-top: 40px;
+}
+
+.titleHamburguesas {
+    margin-top: 20px;
+}
+
+.titleHamburguesas h1 {
+    font-size: 40px;
+
+}
+
+.imgHamburguesas li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.imgHamburguesas img {
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.imgHamburguesas img:hover{
+    transform: scale(1.1);
+}
+
+/*Pollo*/
+
+#Pollo {
+    margin-top: 40px;
+}
+
+.titlePollo {
+    margin-top: 20px;
+}
+
+.titlePollo h1 {
+    font-size: 40px;
+
+}
+
+.imgPollo li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.imgPollo img {
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.imgPollo img:hover{
+    transform: scale(1.1);
+}
+
+/*Veggie*/
+
+#Veggie {
+    margin-top: 40px;
+}
+
+.titleVeggie {
+    margin-top: 20px;
+}
+
+.titleVeggie h1 {
+    font-size: 40px;
+
+}
+
+.imgVeggie li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.imgVeggie img {
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.imgVeggie img:hover{
+    transform: scale(1.1);
+}
+
+/*KingJr*/
+#KingJr {
+    margin-top: 40px;
+}
+
+.titleKingJr {
+    margin-top: 20px;
+}
+
+.titleKingJr h1 {
+    font-size: 40px;
+
+}
+
+.imgKingJr li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.imgKingJr img {
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.imgKingJr img:hover{
+    transform: scale(1.1);
+}
+
+
+/*Complementos*/
+
+#Complementos {
+    margin-top: 40px;
+}
+
+.titleComplementos {
+    margin-top: 20px;
+}
+
+.titleComplementos h1 {
+    font-size: 40px;
+
+}
+
+.imgComplementos li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.imgComplementos img {
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.imgComplementos img:hover{
+    transform: scale(1.1);
+}
+
+/*Postres*/
+
+#Postres {
+    margin-top: 40px;
+}
+
+.titlePostres {
+    margin-top: 20px;
+}
+
+.titlePostres h1 {
+    font-size: 40px;
+
+}
+
+.imgPostres li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.imgPostres img {
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.imgPostres img:hover{
+    transform: scale(1.1);
+}
+/*Footer*/
+
+
+footer {
+    background-color: #d62300;
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+  }
+  
+  

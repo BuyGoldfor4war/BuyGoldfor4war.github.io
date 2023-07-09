@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'Flame';
+    src: url(./fonts/FlameBold.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Flame';
+}
+
+body {
+  background: #ffd787;
+}
+
+nav {
+    background-color: #ffd787;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Flame';
+    font-size: 20px;
+}
+
+nav ul li.MENU a:hover {
+  background-color: #ffe2a7;
+  padding: 10px;
+  border-radius: 15px;
+  color: #d62300;
+}
+
+nav ul li.NEWS a:hover {
+  background-color: #ffe2a7;
+  padding: 10px;
+  border-radius: 15px;
+  color: #d62300;
+}
+
+ul li.active {
+  background-color: #d62300;
+  border-radius: 15px;
+}
+
+ul li.active a {
+  color: white;
+}
+
+
+.enlace {
+    display: flex;
+    padding: 10px;
+}
+
+.enlace img {
+    width: 30px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+#check {
+    display: none;
+}
+
+@media (max-width: 720px){
+
+    .checkbtn {
+        display: block;
+        position: absolute;
+        left: 40px;
+        font-size: 40px;
+        color: #d62300;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffd787;
+        top: 80px;
+        left: -100%;
+        z-index: 999;
+    }
+
+    nav ul li {
+        display: flex ;
+        text-align: left;
+    } 
+
+    nav ul li a{
+        color: #d62300;
+    } 
+
+    ul li.active {
+      border-radius: 0;
+    }
+
+    li {
+        margin-top: 20px;
+    }
+
+    .enlace img{
+        width: 40px;
+    }
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+
+/*Banner*/
+
+.slider img{
+    max-width: 1200px;
+    border-radius: 25px;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+    margin-top: 20px;
+}
+  
+  .next {
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffb217;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .prev {
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffb217;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    z-index: 0;
+  }
+
+  .next i {
+    background-color: #ffb217;  
+    color: #Fff;
+  }
+
+  .prev i {
+    background-color: #ffb217;
+    color: #fff;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+
+  .dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .dot.active {
+    background-color: #ffb217;
+  }
+
+
+  @media (max-width: 1024px){
+    .slider img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .slide {
+        margin-top: 0;
+    }
+  }
+
+  /*Cupones*/
+
+#coupons {
+    margin-top: 20px;
+}
+
+#coupons li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+
+
+#coupons img {
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+#coupons h1 {
+    font-size: 40px;
+}
+
+@media (max-width: 720px){
+    #coupons img{
+        max-width: 300px;
+    }
+  }
+
+  @media (max-width: 300px){
+    #coupons img{
+        max-width: 150px;
+    }
+  }
+
+  /*cards*/
+
+
+  #news li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    
+  }
+
+  #news h1 {
+    font-size: 40px;
+  }
+
+  .card {
+    display: grid;
+  }
+
+  .card-title {
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .card-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000;
+    max-width: 400px;
+    text-align: left;
+    position: static;
+  }
+  .card-image{
+    max-width: 400px;
+    border-radius: 20px;
+  }
+
+  @media (max-width: 700px){
+    #news li {
+        display: block;
+    }
+
+    .card {
+        margin-top: 40px;
+    }
+
+    .card-image {
+      max-width: 100%;
+    }
+}
+
+
+/*footer*/
+
+footer {
+  background-color: #d62300;
+  width: 100%;
+  height: 80px;
+  margin-top: 20px;
+}
+

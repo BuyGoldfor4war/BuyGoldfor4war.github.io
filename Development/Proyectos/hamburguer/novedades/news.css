@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'Flame';
+    src: url(../fonts/FlameBold.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Flame';
+}
+
+body {
+    background: #ffd787;
+}
+
+nav {
+    background-color: #ffd787;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Flame';
+    font-size: 20px;
+}
+
+nav ul li.INICIO a:hover {
+  background-color: #ffe2a7;
+  padding: 10px;
+  border-radius: 15px;
+  color: #d62300;
+}
+
+nav ul li.NEWS a:hover {
+    background-color: #ffe2a7;
+    padding: 10px;
+    border-radius: 15px;
+    color: #d62300;
+  }
+
+ul li.active {
+  background-color: #d62300;
+  border-radius: 15px;
+}
+
+ul li.active a {
+  color: white;
+}
+
+.subMenu {
+    width: 100%;
+    position: relative;
+    background-color: #ffd787;
+}
+
+@media (max-width: 1208px) {
+    .subMenu {
+        white-space: nowrap;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+@media (max-width: 721px) {
+    .subMenu {
+        white-space: nowrap;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+.subMenu li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.subMenu a{
+    color: #d62300;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+.subMenu.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffd787; /* ajusta el color de fondo según tus necesidades */
+    z-index: 99; /* asegúrate de que el submenú se superponga a otros elementos si es necesario */
+    height: 40px;
+}
+
+.enlace {
+    display: flex;
+    padding: 10px;
+}
+
+.enlace img {
+    width: 30px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 720px){
+
+    .checkbtn {
+        display: block;
+        position: absolute;
+        left: 40px;
+        font-size: 40px;
+        color: #d62300;
+        z-index: 999;
+        border-radius: 20px;
+        border-radius: 0;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffd787;
+        top: 80px;
+        left: -100%;
+        z-index: 9999;
+    }
+
+    ul li.active {
+        border-radius: 0;
+    }
+
+    ul li {
+        border-radius: 0;
+    }
+
+    nav ul li {
+        display: flex ;
+        text-align: left;
+    } 
+
+    nav ul li a{
+        color: #d62300;
+    } 
+
+    li {
+        margin-top: 20px;
+    }
+
+    .enlace img{
+        width: 40px;
+    }
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+
+/*news 1*/
+
+#news li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    
+  }
+
+  #news h1 {
+    font-size: 40px;
+  }
+
+  .card {
+    display: grid;
+  }
+
+  .card-title {
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .card-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000;
+    max-width: 400px;
+    text-align: left;
+    position: static;
+  }
+  .card-image{
+    max-width: 400px;
+    border-radius: 20px;
+  }
+
+  @media (max-width: 700px){
+    #news li {
+        display: block;
+    }
+
+    .card {
+        margin-top: 40px;
+    }
+
+    .card-image {
+      max-width: 100%;
+    }
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  @media (max-width: 1000px){
+    .popup img{
+        max-width: 300px;
+    }
+  }
+
+  .popup img {
+    border-radius: 20px;
+  }
+
+  .popup p {
+    margin-top: 10px;
+  }
+  
+  .popup-contenido {
+    background-color: #ffd787;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+
+  }
+
+  #miPopup4 img{
+    max-width: 800px;
+  }
+
+
+  .Boton {
+    margin-top: 20px;
+    background-color: #ffc145;
+    padding: 10px;
+    border: 0 solid;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .Boton:hover {
+    background-color: #d62300;
+    color: white;
+  }
+
+  /*footer*/
+
+footer {
+    background-color: #d62300;
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    bottom: 0;
+    position: relative;
+  }
+  
+  
